@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.FetchAllDatactivity">
+
+
+    <LinearLayout
+        android:id="@+id/rlHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/scale_50dp"
+        android:background="@color/ThemeBlueColor"
+        android:orientation="horizontal"
+        android:weightSum="1.20">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.80"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/headerColor"
+                android:textSize="@dimen/txt_20" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.4"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvRefresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Refresh"
+                android:textColor="@color/headerColor"
+                android:textSize="@dimen/txt_20" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+
+        <ListView
+            android:id="@+id/lvShowContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTotalOutstanding"
+            android:layout_margin="@dimen/scale_10dp" />
+
+
+<!--        <ListView-->
+<!--            android:id="@+id/lvShowContent"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"></ListView>-->
+
+    </LinearLayout>
+
+</LinearLayout>
